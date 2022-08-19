@@ -1,5 +1,5 @@
 const greetingStart = "Hello, my name is ";
-const firtsName = "Wiston Uribe Marin";
+const firtsName = "Wiston";
 
 const greetingOne = greetingStart + firtsName;
 const greetingTwo = `${greetingStart}${firtsName}`;
