@@ -1,22 +1,8 @@
-// Add comments to explain what this function does. You're meant to use Google!
-function getNumber() {
-  return Math.random() * 10;
-}
 
-// Add comments to explain what this function does. You're meant to use Google!
-function s(w1, w2) {
-  return w1.concat(w2);
-}
-
+// Funcion que recibe tres parametro String y los concatena para tener un dato de salida 
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+  return (`${firstWord} ${secondWord} ${thirdWord}`);
 }
-
-/* ======= TESTS - DO NOT MODIFY =====
-There are some Tests in this file that will help you work out if your code is working.
-To run these tests type `node 3-function-output` into your terminal
-*/
 
 const util = require('util');
 

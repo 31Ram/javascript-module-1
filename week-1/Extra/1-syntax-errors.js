@@ -1,5 +1,3 @@
-// There are syntax errors in this code - can you fix it to pass the tests?
-
 function addNumbers(a, b, c) {
     return (a + b + c);
 }
@@ -13,12 +11,6 @@ function getTotal(a, b) {
     
     return (`The total is ${total}`);
 }
-
-/* ======= TESTS - DO NOT MODIFY =====
-There are some Tests in this file that will help you work out if your code is working.
-
-To run these tests type `node 1-syntax-errors.js` into your terminal
-*/
 
 const util = require('util');
 
