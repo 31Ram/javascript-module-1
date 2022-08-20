@@ -10,8 +10,7 @@ function introduceMe(name, age){
 
 function getTotal(a, b) {
     let total = a + b;
-
-    // Use string interpolation here
+    
     return (`The total is ${total}`);
 }
 

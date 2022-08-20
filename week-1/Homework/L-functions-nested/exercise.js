@@ -5,7 +5,7 @@ let mentor4 = "Rob";
 let mentor5 = "Yohannes";
  
 function uppercase (dato){
-    return (dato.toUpperCase());
+  return (dato.toUpperCase());
 }
 
 function greeting(firtsName){
@@ -13,4 +13,7 @@ function greeting(firtsName){
 }
 
 console.log(greeting(uppercase(mentor1)));
-console.log(greeting(mentor1));
+console.log(greeting(uppercase(mentor2)));
+console.log(greeting(uppercase(mentor3)));
+console.log(greeting(uppercase(mentor4)));
+console.log(greeting(uppercase(mentor5)));

@@ -1,5 +1,10 @@
+function añoActual(){
+  let date = new Date();
+  return (date.getFullYear());
+}
+
 function añoDeNacimiento(age) {
-  return 2022 - age;
+  return (añoActual()-age);
 }
 
 function informacionDeLaPersona(name, age) {
@@ -11,4 +16,4 @@ function informacionDeLaPersona(name, age) {
 
 let nombrePersona = "Wiston";
 let años = 32;
-console.log(informacionDeLaPersona(nombrePersona,años));
+console.log(informacionDeLaPersona(nombrePersona, años));
