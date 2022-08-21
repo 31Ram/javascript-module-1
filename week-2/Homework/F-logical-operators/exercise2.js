@@ -5,11 +5,37 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(numero){
+  if(numero<0){
+    return (true);
+  } else{
+    return (false);
+  }
+}
 
-/* 
-  DO NOT EDIT BELOW THIS LINE
-  --------------------------- */
+function isBetween5and10(numero){
+  if((numero>=5)&&(numero<=10)){
+    return (true);
+  } else{
+    return (false);
+  }
+}
+
+function isShortName(nombre){
+  if(nombre.length<10){
+    return (true);
+  } else{
+    return (false);
+  }
+}
+
+function startsWithD(nombre){
+  if(nombre.charAt(0)===nombre.charAt(0).toUpperCase()){
+    return (true);
+  } else{
+    return (false);
+  }
+}
 
 console.log("Is -10 is a negative number?", isNegative(-10));
 console.log("Is 5 a negative number?", isNegative(5));
