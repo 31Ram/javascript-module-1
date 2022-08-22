@@ -6,14 +6,15 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
+  if (arr.length===0){
+    return (true); 
+  } else {
+      return (false); 
+ }
 }
 
-/* 
-  DO NOT EDIT BELOW THIS LINE
-  --------------------------- */
-var numbers = [1, 2, 3];
-var names = [];
+let numbers = [1, 2, 3];
+let names = [];
 
 console.log(isEmpty(numbers));
 console.log(isEmpty(names));

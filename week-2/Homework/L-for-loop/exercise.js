@@ -9,7 +9,11 @@
 let n = 10;
 
 function sumTillNum(num){
-	//your code here
+	let suma=0;
+	for (let control=0; control<=num; control++){
+      suma = suma+control;
+	}
+	return (suma);
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
