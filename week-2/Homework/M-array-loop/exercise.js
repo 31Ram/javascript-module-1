@@ -14,11 +14,21 @@ const daysOfWeek = [
 ];
 
 function arrayString(arr){
-   for(let control = 0; control<arr.length; control++){
-     if(arr[control].charAt(0)==="T"){
+  for(let control = 0; control<arr.length; control++){
+    if(arr[control].charAt(0)==="T"){
        console.log(arr[control]);
-     }
-   }
+    }
+  }
 }
 
-arrayString(daysOfWeek);
+function arrayStartsWith(arr){
+  for(let control=0; control<arr.length; control++){
+    if(arr[control].startsWith('T')){
+      console.log(arr[control]); 
+    }
+  }
+}
+
+arrayString(daysOfWeek); // funcion 1
+console.log();
+arrayStartsWith(daysOfWeek); // funcion 2
