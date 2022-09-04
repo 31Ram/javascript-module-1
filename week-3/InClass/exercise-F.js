@@ -12,11 +12,11 @@ const edadPersona=(añoDeNacimiento)=>{
 permisoDeConducir=(year)=>{
   let años = edadPersona(year);
     if(años>=18){
-      return(`Nacio en ${year} puede conducir`);
+      console.log(`Nacio en ${year} puede conducir`);
     } else{
-        return(`Nacio en ${year} puede conducir en ${18-años} años`);
+        console.log(`Nacio en ${year} puede conducir en ${18-años} años`);
     }
 }
 
-console.log(birthYears.forEach((year)=>console.log(permisoDeConducir(year))));
+birthYears.forEach((year)=>permisoDeConducir(year));
 

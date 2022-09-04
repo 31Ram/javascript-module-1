@@ -21,7 +21,7 @@ undefined
 _Returns true if a value is in the array._
 
 ```js
-var mentors = ["Daniel", "Irini", "Ashleigh", "Rob", "Etzali"];
+let mentors = ["Daniel", "Irini", "Ashleigh", "Rob", "Etzali"];
 
 function isAMentor(name) {
   return mentors.includes(name);

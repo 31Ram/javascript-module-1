@@ -8,14 +8,22 @@
 
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
-var pairsByIndex; // Complete this statement
+checkArray=(elemento)=>{
+  if((Array.isArray(elemento))&&(elemento.length>1)&&(elemento.length<3)){ 
+    return(true);
+  } else{
+    return(false);
+  }
+}
 
-var students = ["Islam", "Lesley", "Harun", "Rukmini"];
-var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
+let pairsByIndex = pairsByIndexRaw.filter(checkArray); // Complete this statement
 
-var pairs = pairsByIndex.map(function(indexes) {
-  var student = students[indexes[0]];
-  var mentor = mentors[indexes[1]];
+let students = ["Islam", "Lesley", "Harun", "Rukmini"];
+let mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
+
+let pairs = pairsByIndex.map(function(indexes) {
+  let student = students[indexes[0]];
+  let mentor = mentors[indexes[1]];
   return [student, mentor];
 });
 

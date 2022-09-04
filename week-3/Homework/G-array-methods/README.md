@@ -15,11 +15,11 @@ Arrays also have several methods that you can use.
 _An array method that sorts the values in an array into ascending alphabetical or numerical order._
 
 ```js
-var unorderedLetters = ["z", "v", "b", "f", "g"];
-var orderedLetters = unorderedLetters.sort();
+let unorderedLetters = ["z", "v", "b", "f", "g"];
+let orderedLetters = unorderedLetters.sort();
 
-var unorderedNumbers = [8, 5, 1, 4, 2];
-var orderedNumbers = unorderedNumbers.sort();
+let unorderedNumbers = [8, 5, 1, 4, 2];
+let orderedNumbers = unorderedNumbers.sort();
 
 console.log(orderedLetters); // logs [ 'b', 'f', 'g', 'v', 'z' ]
 console.log(unorderedLetters); // logs [ 'b', 'f', 'g', 'v', 'z' ]
@@ -48,8 +48,8 @@ Did you notice how calling the concat method did not change `arr`? This is becau
 If you wan to use the array returned by calling `.concat()` you should store it in a new variable.
 
 ```js
-var arr = [1, 2, 3];
-var newArr = arr.concat(4);
+let arr = [1, 2, 3];
+let newArr = arr.concat(4);
 
 console.log(newArr); // logs [1, 2, 3, 4]
 ```
