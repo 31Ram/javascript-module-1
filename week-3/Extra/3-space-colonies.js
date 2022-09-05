@@ -8,11 +8,16 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
-
+function colonisers(voyagers) {
+  return(voyagers.filter((nameFamily)=>{ 
+  let buffer = nameFamily.split(" ");
+  if((buffer.length>0)&&(buffer[0].charAt(0)===("A"))&&(buffer[1]==="family")){
+    return(true)
+  } else{
+    return(false)
+  }
+ }));
 }
-
-/* ======= TESTS - DO NOT MODIFY ===== */
 
 const voyagers = [
   "Adam family",

@@ -9,11 +9,9 @@ To be safe to land on, a planet needs to have an Oxygen level between 19.5% and 
 Write a function that finds the first safe oxygen level in the array - Oxygen between 19.5% and 23.5%
 */
 
-function safeLevels() {
-
+function safeLevels(nivel) {
+  return(nivel.find((dato)=>((dato>"19.5%")&&(dato<"23.5%"))));
 }
-
-/* ======= TESTS - DO NOT MODIFY ===== */
 
 const oxygenLevels1 = ["24.2%", "11.3%", "19.9%", "23.1%", "29.3%", "20.2%"];
 const oxygenLevels2 = ["30.8%", "23.5%", "18.8%", "19.5%", "20.2%", "31.6%"];
@@ -23,7 +21,7 @@ const util = require('util');
 
 function test(test_name, actual, expected) {
     let status;
-    if (actual === expected) {
+    if (actual===expected) {
         status = "PASSED";
     } else {
         status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;

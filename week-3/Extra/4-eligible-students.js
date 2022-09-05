@@ -7,11 +7,15 @@
   - Returns an array containing only the names of the who have attended AT LEAST 8 classes
 */
 
-function eligibleStudents() {
-
+function eligibleStudents(students) {
+  return(students.filter((nameStuden)=>{
+    if(nameStuden[1]>=8){
+      return(true);
+    } else{
+        return(false);
+      }
+  }))
 }
-
-/* ======= TESTS - DO NOT MODIFY ===== */
 
 const attendances = [
   ["Ahmed", 8],
